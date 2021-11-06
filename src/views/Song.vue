@@ -20,7 +20,11 @@
     <section class="container mx-auto mt-6" id="comments">
       <div class="bg-white rounded border border-gray-200 relative flex flex-col">
         <div class="px-6 pt-6 pb-5 font-bold border-b border-gray-200">
-          <span class="card-title">Comments ({{ song.comment_count }})</span>
+          <span class="card-title">
+            {{ $tc('song.comment_count', song.comment_count, {
+            count: song.comment_count
+          })}}
+          </span>
           <i class="fa fa-comments float-right text-green-400 text-2xl"></i>
         </div>
         <div class="p-6">
@@ -31,7 +35,7 @@
           <vee-form :validation-schema="schema" @submit="addComment"
                     v-if="userLoggedIn">
             <vee-field as="textarea" name="comment"
-                       class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition
+                    class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition
               duration-500 focus:outline-none focus:border-black rounded mb-4"
                        placeholder="Your comment here..."></vee-field>
             <ErrorMessage class="text-red-600" name="comment" />
