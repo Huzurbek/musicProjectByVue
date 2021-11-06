@@ -13,6 +13,7 @@
         <div class="z-50 text-left ml-8">
           <div class="text-3xl font-bold">{{ song.modified_name }}</div>
           <div>{{ song.genre }}k</div>
+          <div class="song-price">{{ $n(1, 'currency') }}</div>
         </div>
       </div>
     </section>

@@ -4,5 +4,12 @@
   },
   "song": {
     "comment_count": "Без комментариев | 1 Kомментарий | {count} Комментарии"
+  },
+  "register": {
+    "TOS": "",
+    "accept": ""
+  },
+  "manage": {
+    "my_songs": "Мои песни"
   }
 }
