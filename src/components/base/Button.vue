@@ -1,3 +1,3 @@
 <template>
-  <button type="button" class="bg-blue-400">Press me!</button>
+  <button type="button" >Press me!</button>
 </template>
