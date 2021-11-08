@@ -92,7 +92,9 @@ export default {
     };
   },
   computed: {
-    ...mapState(['userLoggedIn']),
+    ...mapState({
+      userLoggedIn: (state) => state.auth.userLoggedIn,
+    }),
     sortedComments() {
       // eslint-disable-next-line vue/no-side-effects-in-computed-properties
       return this.comments.slice().sort((a, b) => {
