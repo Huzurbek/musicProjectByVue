@@ -17,4 +17,5 @@ module.exports = {
       short_name: 'Music',
     },
   },
+
 };

@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page Music project</h1>
+    <h1>This is an about page Music App</h1>
   </div>
 </template>
 <script>
